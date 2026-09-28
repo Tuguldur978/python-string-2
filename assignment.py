@@ -17,12 +17,12 @@ print(is_valid_email("hello@gmail.com"))
 
 # Exercise 2
 def remove_vowels(text):
-     a = ""
-    for char in text:
-        if char not in "aeiouAEIOU":
-            a += char
-    return a
-print(remove_vowels("Please call me tomorrow"))
+a = "aeiouAEIOU"
+b = ""
+for char in text:
+    if char not in a:
+        b = b + char
+return b
  
 # Exercise 3
 def get_initials(text):
