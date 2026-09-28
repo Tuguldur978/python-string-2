@@ -17,9 +17,13 @@ print(is_valid_email("hello@gmail.com"))
 
 # Exercise 2
 def remove_vowels(text):
-    # Write your code here
-    pass
-
+     a = ""
+    for char in text:
+        if char not in "aeiouAEIOU":
+            a += char
+    return a
+print(remove_vowels("Please call me tomorrow"))
+ 
 # Exercise 3
 def get_initials(text):
     # Write your code here
