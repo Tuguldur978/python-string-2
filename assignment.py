@@ -3,15 +3,17 @@
 # Exercise 1
 def is_valid_email(text):
     r = 0
+    c = 0
     for char in text:
         if char == "@":
             r += 1
         if char == ".":
-            r += 1
-    if r == 2 and r>2:
-        print("Valid")
+            c += 1
+    if r >= 1  and c >= 1:
+        return "Valid"
     else:
-        print("Invalid")
+        return "Invalid"
+print(is_valid_email("hello@gmail.com"))
 
 # Exercise 2
 def remove_vowels(text):
