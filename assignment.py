@@ -16,13 +16,13 @@ def is_valid_email(text):
 
 # Exercise 2
 def remove_vowels(text):
-    a = ""
+    result = ""
     for char in text:
         if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
-            a += ""
+            result += ""
         else:
-            a += char
-    return a
+            result += char
+    return result
  
 # Exercise 3
 def get_initials(text):
