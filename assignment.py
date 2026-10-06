@@ -13,7 +13,6 @@ def is_valid_email(text):
         return "Valid"
     else:
         return "Invalid"
-print(is_valid_email("hello@gmail.com"))
 
 # Exercise 2
 def remove_vowels(text):
