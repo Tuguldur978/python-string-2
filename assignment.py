@@ -47,6 +47,9 @@ def extract_year(text):
 
 # Exercise 5
 def is_palindrome(text):
-    # Write your code here
-    pass
+        removed_text = ""
+        for char in text:
+            if char.isalnum():
+                removed_text += char.lower()
+        return removed_text == removed_text[::-1]
 
