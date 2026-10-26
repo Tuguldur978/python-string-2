@@ -2,14 +2,16 @@
 
 # Exercise 1
 def is_valid_email(text):
-        at = False
-        dot = False
-        for char in text:
-            if char == "@":
-                has_at = True
-            elif char == ".":
-                has_dot = True
-    if  at and dot:
+    has_at = False
+    has_dot = False
+
+    for char in text:
+        if char == "@":
+            has_at = True
+        elif char == ".":
+            has_dot = True
+
+    if has_at and has_dot:
         return "Valid"
     else:
         return "Invalid"
