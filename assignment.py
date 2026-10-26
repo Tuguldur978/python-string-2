@@ -2,16 +2,14 @@
 
 # Exercise 1
 def is_valid_email(text):
-    has_at = False
-    has_dot = False
-
+    at = False
+    dot = False
     for char in text:
         if char == "@":
-            has_at = True
+            at = True
         elif char == ".":
-            has_dot = True
-
-    if has_at and has_dot:
+            dot = True
+    if at and dot:
         return "Valid"
     else:
         return "Invalid"
@@ -37,8 +35,15 @@ def get_initials(text):
 
 # Exercise 4
 def extract_year(text):
-    # Write your code here
-    pass
+        words = text.split()
+        for word in words:
+            remove_word = ""
+            for char in word:
+                if char.isdigit():
+                    remove_word += char
+            if len(remove_word) == 4:
+                return remove_word
+        return False
 
 # Exercise 5
 def is_palindrome(text):
